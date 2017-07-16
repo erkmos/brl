@@ -1,0 +1,13 @@
+update(0) -> 218371 gas
+__callback normal - 74931 * 3
+__callback recursive - 284693 gas
+
+
+update(0) - 114557 gas (0.0061735 ETH with 285000 gaslimit)
+
+__callback1 - 159565 gas
+__callback2 - 160527 gas
+__callback3 - 160176 gas
+__callback4 - 187970 gas (with nested call)
+
+668238 total gas

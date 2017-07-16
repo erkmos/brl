@@ -63,6 +63,11 @@ contract USDOracle is usingOraclize {
       gasCost = gas;
   }
 
+  function setGasPrice(uint256 price) onlyOwner {
+    require(price > 0);
+    oraclize_setCustomGasPrice(price);
+  }
+
   function setTimeBetweenUpdates(uint256 _delay) onlyOwner {
     timeBetweenUpdates = _delay;
   }
